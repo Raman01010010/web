@@ -2,57 +2,121 @@
 <html lang="en">
 <head>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
     <style>
-        body {
+        
+        .k {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            margin: 0;
         }
 
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 100px; 
+        .profile-container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            z-index: 0;
         }
 
-        .box {
-            width: 300px;
+        .profile-image {
+            width: 150px;
             height: 150px;
-            
-            background-color: #eeeafa;
-            color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 24px;
-            font-weight: bold;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #fff;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile-details {
+            margin-top: 20px;
         }
         .typing-effect {
-            color: #000361;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: typing 3s steps(30) infinite;
-    
-}
-@keyframes typing {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 100%;
-    }}
+            overflow: hidden;
+            white-space: nowrap;
+            color: rgb(3, 62, 113);
+            font-family: sans-serif;
+            animation: typing 3s steps(30);
+        }
+        .typing-effect1 {
+            overflow: hidden;
+            white-space: nowrap;
+            color: rgb(3, 62, 113);
+            font-family: sans-serif;
+            animation: typing1 3s steps(30);
+        }
+        @keyframes typing {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+        @keyframes typing1{
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 20%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            /* Adjust styles for smaller screens */
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
-<body style="background: linear-gradient(to right, #000361, #960071, #0000ff);">
-    <div class="grid-container">
-        <div class="box rounded-xl animate-pulse"><h1 class="typing-effect">Hello! I am Prajapati Raman</h1></div>
-        <div class="box rounded-xl animate-pulse"><h1 class="typing-effect">Registration No: 20223177</h1></div>
-        <div class="box rounded-xl animate-pulse"><a href=""><h1 class="typing-effect">My Instagram</h1></a></div>
-        <div class="box rounded-xl animate-pulse"><h1 class="typing-effect">nbxcbcnxbcnx</h1></div>
+<body>
+    <header class="typing-effect shadow-md">
+        <div id="brand"><a href="/">E-Cell</a></div>
+        <nav>
+          <ul>
+            <li ><a href="./home.html">Home</a></li>
+            <li><a href="./index.html">Grid</a></li>
+            <li><a href="https://www.linkedin.com/in/prajapati-raman-6b88a2257">LinkedIn</a></li>
+          </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+              <li><a href="./home.html">Home</a></li>
+              <li><a href="./index.html">Grid</a></li>
+              <li><a href="https://www.linkedin.com/in/prajapati-raman-6b88a2257">LinkedIn</a></li> 
+          </ul>
+        </div>
+      </header>
+      
+    <div class="k"  style=" background-image: linear-gradient(to bottom right, rgb(85, 0, 255), rgb(255, 0, 191));">
+        
+    <div class="typing-effect1 profile-container shadow-lg scale-150">
+       
+        <img src="p.jpg" alt="Profile Picture" class="profile-image">
+        <div class="text-gray-800 profile-details1">
+            
+            <h1 class="typing-effect font-mono">Prajapati Raman</h1>
+            <p class="typing-effect font-mono">Registration No : 20223177</p>
+            <p class="hover:scale-150"><a href="https://instagram.com/rmn1.110?igshid=MmU2YjMzNjRlOQ=="><button><img src="i.png" height=30 width=30"></button></a></p>
+            <!-- Add more details as needed -->
+        </div>
     </div>
+    
+</div>
+    <script src="index.js"></script>
 </body>
 </html>
