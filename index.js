@@ -66,14 +66,14 @@ console.log(q1.peek());
                 // if (selectedBox !== null) {
                 //     selectedBox.style.backgroundColor = "#3498db"; // Restore previous box color
                 // }
-                element.style.backgroundColor ="#7A0000";// Change the color of the clicked box
-                selectedBox = element; // Update the selected box
+                element.style.backgroundColor ="#7A0000";
+                selectedBox = element; 
             
         }
         function ram2(e){
             const boxes = document.querySelectorAll(".box2");
             boxes.forEach(box => {
-                box.style.backgroundColor = "#00407A";// Restore original color
+                box.style.backgroundColor = "#00407A";
             });
             console.log(e.id)
 
