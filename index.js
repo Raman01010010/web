@@ -71,6 +71,7 @@ console.log(q1.peek());
             
         }
         function ram2(e){
+
             const boxes = document.querySelectorAll(".box2");
             boxes.forEach(box => {
                 box.style.backgroundColor = "#00407A";
@@ -89,9 +90,10 @@ if(q1.size()==0)
 clearTimeout(intervalId);
            // }
         }
-        function ram3(){
+        function ram3(element){
             let i=0;
-
+            element.style.backgroundColor ="#7A0000";
+q1.enqueue(element.id);
 
 
             const intervalId = setInterval(  function (){
