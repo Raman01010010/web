@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 80px; 
+        }
+
+        .box {
+            width: 300px;
+            height: 150px;
+            
+            background-color: #eeeafa;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .typing-effect {
+            color: #000361;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(30) infinite;
+    
+}
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }}
+    </style>
+</head>
+<body style="background: linear-gradient(to right, #000361, #960071, #0000ff);">
+    <div class="grid-container">
+        <div class="box rounded-xl animate-pulse"><h1 class="typing-effect">Hello! I am Prajapati Raman</h1></div>
+        <div class="box rounded-xl animate-pulse"><h1 class="typing-effect">Registration No: 20223177</h1></div>
+        <div class="box rounded-xl animate-pulse"><a href=""><h1 class="typing-effect">My Instagram</h1></a></div>
+        <div class="box rounded-xl animate-pulse"><h1 class="typing-effect">nbxcbcnxbcnx</h1></div>
+    </div>
+</body>
+</html>
