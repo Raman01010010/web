@@ -48,7 +48,7 @@ function toggleMobileMenu(menu) {
     //else{
     //    offcanvasMenu.style.marginTop ='0px';
     //}
-    //menu.classList.toggle('open');
+menu.classList.toggle('open');
     
 }
 
