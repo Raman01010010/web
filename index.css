@@ -230,3 +230,11 @@ body, h1, h2, p {
     grid-column: span 2;
   }
 }
+@media (max-width: 768px) {
+  .box1{
+    order:2;
+  }
+  .box{
+    order:1;
+  }
+}
