@@ -1,0 +1,57 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css" />
+    <title>Navigation bar</title>
+  </head>
+  <body>
+    <header>
+      <div id="brand"><a href="/">E-Cell</a></div>
+      <nav>
+        <ul>
+          <li ><a href="/home.html">Home</a></li>
+          <li><a href="/grid.html">grid</a></li>
+          <li><a href="/LinkedIn">linkedIn</a></li>
+        </ul>
+      </nav>
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+            <li><a href="/home.html">Home</a></li>
+            <li><a href="/grid.html">grid</a></li>
+            <li><a href="/LinkedIn">linkedIn</a></li> 
+        </ul>
+      </div>
+    </header>
+    <div class="grid-container">
+      <div class="box1">Box 1</div>
+      <div class="box">
+        <img src="./cell.jpeg"/>
+      </div>
+      <div class="box">
+
+
+        <div class="grid-container1">
+          <div class="box2 hover:bg-red-500"></div>
+          <div class="box2"></div>
+          <div class="box2"></div>
+          <div class="box2"></div>
+          <div class="box2"></div>
+          <div class="box2"></div>
+          <div class="box2"></div>
+          <div class="box2"></div>
+          <div class="box2"></div>
+      </div>
+
+
+
+      </div>
+  </div>
+    <script src="index.js"></script>
+  </body>
+</html>
