@@ -86,8 +86,10 @@ ul li:hover {
   transform: rotate(45deg) translate(-6px, -8px);
 }
 
+
 .open .mobile-menu {
   display: flex;
+  height: 30vh;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
@@ -142,7 +144,11 @@ body, h1, h2, p {
 }
 
 /* Style for individual boxes */
+.open .box1{
+  margin-top: 1000px;
+}
 .box1 {
+  
   background-image: linear-gradient(to bottom right, rgb(85, 0, 255), rgb(255, 0, 191)); /* Blue background color */
   color: #fff; /* White text color */
   padding: 20px; /* Padding inside the boxes */
@@ -152,6 +158,7 @@ body, h1, h2, p {
   border-radius: 5px; /* Rounded corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
 }
+
 .box {
   border-style: solid;
   border-width: medium;
@@ -166,6 +173,21 @@ body, h1, h2, p {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
     overflow: hidden;
 }
+.boxg {
+  border-style: solid;
+  border-width: medium;
+  border-color: #000a06;
+    background-color: #dadada; /* Blue background color */
+    color: #fff; /* White text color */
+    padding: 20px; /* Padding inside the boxes */
+    text-align: center; /* Center text horizontally */
+    font-size: 18px;
+    height: 60vh;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+    overflow: hidden;
+}
+
 
 /* Media query for medium-width devices */
 @media screen and (max-width: 768px) {
