@@ -200,3 +200,11 @@ body, h1, h2, p {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
 }
 
+@media (max-width: 1023px) and (min-width: 768px){
+  .grid-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .box1 {
+    grid-column: span 2;/* One column for medium-width devices */
+  }
+}
